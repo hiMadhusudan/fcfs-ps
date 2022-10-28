@@ -1,0 +1,100 @@
+<!-- Header -->
+<header>
+  <h1><a href="/src/index.html">CPU Scheduling Algorithm Solver</a></h1>
+</header>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!-- Navigation Menu -->
+<nav>
+  <ul>
+    <li><a routerLink="fcfs" id="l_fcfs">First Come First Serve</a></li>
+
+    <li><a routerLink="pps" id="l_pps">Preemptive Priority</a></li>
+
+    <li><a routerLink="npps" id="l_npps">Non-preemptive Priority</a></li>
+  </ul>
+</nav>
+
+<!-- Main Content -->
+<main id="m_area">
+  <div id="d_main">
+    <h2>Instructions:</h2>
+    <!-- <p>&#9755; CPU Scheduling Algorithm.</p> -->
+    <br>
+    <p>&#9755; <strong id="hov">Hover</strong> the mouse pointer on <strong id="hov">Algorithm</strong> name to learn about it.</p>
+    <br>
+    <p>&#9755; <strong id="hov">Click on Algorithm</strong> in the navigation menu to solve related question.</p>
+    <br>
+  </div>
+
+  <div id="d_fcfs">
+    <h2>First Come First Serve Scheduling Algorithm:</h2>
+    <ul>
+      <li>fcfs allocates the cpu memory to the process which request for cpu first</li>
+      <li>non-preemptive</li>
+      <li>follows fifo(first in first out) queue</li>
+      <li>when one process is using cpu then next processes which have already arrived are added to queue</li>
+      <li>Below is an example of FCFS working:</li>
+      <br>
+      <img src="../assets/FCFS.gif" alt="FCFS example" style="height: 40%; width:45%">
+    </ul>
+  </div>
+  <div id="d_pps">
+    <h2>Preemptive Priority Scheduling Algorithm:</h2>
+    <ul>
+      <li>PPS allocates the cpu memory to the process having high priority</li>
+      <li>follows fcfs principle if processes have same priority</li>
+      <li>Below is an example of PPS working:</li>
+      <br>
+      <img src="../assets/PPS.gif" alt="PPS example" style="width: 45%; height: 40%;">
+    </ul>
+  </div>
+  <div id="d_npps">
+    <h2>Non-preemptive Priority Scheduling Algorithm:</h2>
+    <ul>
+      <li>processes are scheduled according to their priority</li>
+      <li>after process is scheduled, it runs till its completion</li>
+      <li>Below is an expample of NPPS working:</li>
+      <br>
+      <img src="../assets/NPPS.gif" alt="NPPS example" style="height: 40%; width: 45%">
+    </ul>
+  </div>
+
+  <!-- Calculation page linking -->
+  <div id="p_fcfs">
+    <router-outlet></router-outlet>
+  </div>
+
+  <div id="p_pps">
+    <router-outlet></router-outlet>
+  </div>
+
+  <div id="p_npps">
+    <router-outlet></router-outlet>
+  </div>
+</main>
+
+<nav style="padding-top: 5px; padding-bottom: 5px;">
+  <ul>
+    <li onmouseover="document.getElementById('d_main').style.display='none', document.getElementById('d_fcfs').style.display='block'" onmouseout="document.getElementById('d_main').style.display='block', document.getElementById('d_fcfs').style.display='none'">First Come First Serve</li>
+
+    <li onmouseover="document.getElementById('d_main').style.display='none', document.getElementById('d_pps').style.display='block'" onmouseout="document.getElementById('d_main').style.display='block', document.getElementById('d_pps').style.display='none'">Preemptive Priority</li>
+
+    <li onmouseover="document.getElementById('d_main').style.display='none', document.getElementById('d_npps').style.display='block'" onmouseout="document.getElementById('d_main').style.display='block', document.getElementById('d_npps').style.display='none'">Non-preemptive Priority</li>
+  </ul>
+</nav>
+
+<!-- Footer -->
+<footer>
+  <p>Designed and Created by - <a id="footr" href="https://linkedin.com/in/himadhusudan">Madhusudan Kumar</a> </p>
+</footer>
+
+<!-- <script>
+  function hide(obj) {
+    var el = document.getElementById(obj);
+      el.style.display = 'none';
+  }
+  function show(obj) {
+    var el = document.getElementById(obj);
+      el.style.display = 'block';
+  }
+</script> -->

@@ -1,0 +1,147 @@
+/* Global style properties */
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    max-width: 1380px;
+}
+
+/* Header styles */
+header {
+    margin: auto;
+    background-color: rgb(254, 100, 5);
+    font-size: small;
+    padding-top: .1px;
+    padding-bottom: .1px;
+    margin-top: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+h1 > a {
+    text-decoration: none;
+    
+    text-shadow: 2px 3px 4px rgb(198, 37, 9);
+    color: whitesmoke;
+}
+h1 > a:hover {
+    color: yellow;
+    text-shadow: 2px 3px 4px red;
+}
+
+/* navigation menu styles */
+nav {
+    margin: auto;
+    background-color: rgb(220, 220, 227);
+}
+
+/* removes the gap between navbar and header */
+nav > ul {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style: none;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgb(220, 220, 227);
+    
+}
+nav > ul > li {
+    display: table-cell;
+
+}
+nav > ul > li > a {
+    display: block;
+    padding: 15px;
+    font-weight: 600;
+    text-decoration: none;
+}
+#fcfs:hover {
+    color: whitesmoke;
+    background-color: rgb(206, 144, 81);
+}
+#pps:hover {
+    color: whitesmoke;
+    background-color: rgb(134, 176, 235);
+}
+#npps:hover {
+    color: whitesmoke;
+    background-color: rgb(133, 212, 133);
+}
+
+
+/* main section styles */
+main{
+    margin: auto;
+    height: 36rem;
+    overflow: auto;
+    background-color: rgb(249, 249, 255);
+    margin-bottom: 0;
+    margin-top: 0;
+}
+main > div {
+    margin-top: 0px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+main > div > h2 {
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+#d_main {
+    display: block;
+}
+#d_fcfs {
+    display: none;
+}
+#d_pps {
+    display: none;
+}
+#d_npps {
+    display: none;
+}
+#p_fcfs {
+    display: block;
+}
+#p_pps {
+    display: block;
+}
+#p_npps {
+    display: block;
+}
+
+strong {
+    animation: animate 1.5s infinite;
+}
+
+@keyframes animate{
+    from {color: rgb(11, 50, 226);}
+    to {color: rgb(221, 88, 0);}
+}
+
+
+/* Footer styles */
+footer {
+    margin: auto;
+    background-color: rgb(4, 122, 16);
+    padding-top: 0.5px;
+    padding-bottom: 0.5px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+footer > p {
+    text-align: center;
+    color: whitesmoke;
+}
+
+footer > p > a {
+    text-decoration: none;
+    color: whitesmoke;
+}
